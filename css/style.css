@@ -27,7 +27,7 @@ display: block;
     background-image: url(../images/banner-bg-tablet.jpg);
     }
 .trend {
-    width: 50%;
+    width: 49.6%;
     }
 }
 @media (max-width: 640px) and (orientation: landscape){
@@ -35,7 +35,7 @@ display: block;
     background-image: url(../images/banner-mobile.jpg);
     }
 .trend {
-    width: 100%;
+    width: 99.2%;
     }
 }   
 
@@ -44,7 +44,7 @@ display: block;
     background-image: url(../images/banner-mobile.jpg);
     }
 .trend {
-    width: 50%;
+    width: 49.6%;
     }
 }
 
