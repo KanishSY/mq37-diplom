@@ -24,8 +24,21 @@ display: block;
 
 @media (min-width: 641px) and (max-width: 1200px) {
 .header {
-    background-image: url(../images/banner-bg-tablet.jpg);
-    }
+background-image: url(../images/banner-bg-tablet.jpg);
+}
+
+.header-container {
+width: 90%;
+padding: 0 5%;
+align-items: center;
+}
+
+.header-title {
+width: 78%;
+font-family: 'OpenSans-Bold', Arial, sans-serif;
+font-size: 40px;
+}
+
 .trends {
 display: flex;
 flex-wrap: wrap;
@@ -37,18 +50,32 @@ justify-content: space-between;
 width: 50%;
 margin-top: 3px;
 }
+
+.menu {
+    width: 25px;
+    height: 25px;
 }
-
-
+.menu-list {
+    display: none;
+}
+}
 
 @media (max-width: 640px) and (orientation: landscape){
 .header {
-    background-image: url(../images/banner-mobile.jpg);
-    }
+background-image: url(../images/banner-mobile.jpg);
+}  
 .trend {
-    width: 99.2%;
-    }
-}   
+width: 99.2%;
+}
+
+.menu {
+width: 25px;
+height: 25px;
+}
+.menu-list {
+display: none;
+}
+}
 
 @media (max-width: 640px) and (orientation: portrait){
 .header {
@@ -57,6 +84,14 @@ margin-top: 3px;
 .trend {
     width: 49.6%;
     }
+
+.menu {
+    width: 25px;
+    height: 25px;
+}
+.menu-list {
+    display: none;
+}
 }
 
 .header {
@@ -133,6 +168,10 @@ text-transform: uppercase;
 .menu-list-item {
 padding-top: 20px;
 padding-left: 20px;
+}
+
+.menu__button {
+display: none;
 }
 
 .trends {
