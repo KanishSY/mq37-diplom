@@ -171,7 +171,7 @@
     z-index: -1;
 }
 
-.trend:nth-child(even) {
+.trend:nth-last-child(-n+3) {
     margin-left: 3px;
 }
 
@@ -717,6 +717,12 @@ a {
         margin-right: 0;
         margin-bottom: 3px;
     }
+    .trend:nth-last-child(-n+3) {
+        margin-left: 0;
+    }    
+    .trend:nth-child(even) {
+        margin-left: 3px;
+    }
     .trend-name {
         font-size: 1.1rem;
     }
@@ -868,6 +874,9 @@ a {
         /* min-width: 385px; */
         margin-top: 3px;
     }
+    .trend:nth-last-child(-n+3) {
+        margin-left: 0;
+    }    
     .menu-list-item {
         display: none;
     }
