@@ -719,7 +719,7 @@ a {
     }
     .trend:nth-last-child(-n+3) {
         margin-left: 0;
-    }    
+    }
     .trend:nth-child(even) {
         margin-left: 3px;
     }
@@ -810,24 +810,15 @@ a {
     }
 }
 
-@media (max-width: 640px) and (orientation: landscape) {
-    .header {
-        background-image: url(../images/banner-mobile.jpg);
+@media (min-height: 641px) and (max-width: 1200px) and (orientation: landscape) {
+    .trands {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
     }
-    .trend {
-        width: 99.2%;
-    }
-    .menu-list-item {
-        display: none;
-    }
-    .logo-img {
-        margin-left: 30px;
-    }
-    .button-label {
-        width: 30px;
-        height: 3px;
-        background-color: #ffffff;
-        margin: 6px 30px;
+    .trands {
+        width: 24.8%;
     }
 }
 
@@ -839,12 +830,12 @@ a {
     .header-container {
         width: 85%;
         padding: 0;
-        align-items: flex-start;
     }
     .container-title {
         width: 70%;
-        justify-content: center;
-        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
     }
     .header-title {
         font-family: 'OpenSans-Bold', Arial, sans-serif;
@@ -856,11 +847,21 @@ a {
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 100px;
+    }
+    .header-menu {
+        display: flex;
+        align-items: flex-start;
     }
     .logo-img {
-        width: 300px;
-        margin-top: 100px;
-        margin-left: 100px;
+        width: 400px;
+        padding-left: 90px;
+        /* margin-top: 100px;
+        margin-left: 100px; */
+        /*  margin: 0; */
     }
     .trends {
         display: flex;
@@ -876,7 +877,7 @@ a {
     }
     .trend:nth-last-child(-n+3) {
         margin-left: 0;
-    }    
+    }
     .menu-list-item {
         display: none;
     }
@@ -927,12 +928,12 @@ a {
     .about {
         width: 100%;
     }
-     .aside {
+    .aside {
         /* display: flex;  */
         width: 80%;
         margin-bottom: 40px;
-    } 
-/*     .aside-section {
+    }
+    /*     .aside-section {
         display: flex;
         flex-direction: column; 
         width: 90%;
@@ -960,5 +961,17 @@ a {
         width: 100%;
         margin-right: auto;
         margin-left: auto;
+    }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+    .trands {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .trand {
+        width: 47%;
     }
 }
