@@ -409,8 +409,8 @@
     position: relative;
     margin: auto;
     margin-top: 10px;
-    width: 3.75rem;
-    height: 0.1875rem;
+    width: 60px;
+    height: 3px;
     background: #b59f5b;
 }
 
@@ -439,8 +439,12 @@
     margin-top: 0px;
 }
 
+.news-text {
+    margin-left: 30px
+}
+
 .news-img {
-    width: 23.75rem;
+    width: 380px;
 }
 
 .news-teg {
@@ -459,7 +463,6 @@
     text-transform: uppercase;
     color: #b59f5b;
     font-size: 0.875rem;
-    margin-left: 30px;
 }
 
 a {
@@ -473,7 +476,7 @@ a {
     font-size: 1.25rem;
     line-height: 1.2;
     margin-bottom: 40px;
-    margin-left: 30px;
+    /*     margin-left: 30px; */
 }
 
 .date {
@@ -490,13 +493,14 @@ a {
 
 .about {
     margin-top: 50px;
-    margin-left: 30px;
+    /*     margin-left: 30px; */
     font-family: 'OpenSans-Regular', Arial, sans-serif;
 }
 
-.date, .auhor {
-    margin-left: 30px;
+/* .date, .auhor {
+       margin-left: 30px;
 }
+ */
 
 .news, .new {
     display: flex;
@@ -516,8 +520,8 @@ a {
     position: relative;
     margin: auto;
     margin-top: 10px;
-    width: 3.75rem;
-    height: 0.1875rem;
+    width: 60px;
+    height: 3px;
     background: #b59f5b;
 }
 
@@ -534,7 +538,7 @@ a {
 }
 
 .new-img {
-    width: 5rem;
+    width: 80px;
 }
 
 .aside {
@@ -576,8 +580,8 @@ a {
 .search-field {
     box-sizing: border-box;
     padding-left: 20px;
-    width: 13.8rem;
-    height: 3.125rem;
+    width: 220px;
+    height: 50px;
     font-size: 0.8125rem;
     border: none;
     background-color: #f4f7f6;
@@ -598,8 +602,8 @@ a {
     position: relative;
     margin: auto;
     margin-top: 10px;
-    width: 3.75rem;
-    height: 0.1875rem;
+    width: 60px;
+    height: 3px;
     background: #b59f5b;
 }
 
@@ -608,7 +612,7 @@ a {
     box-sizing: border-box;
     padding-left: 20px;
     margin-top: 25px;
-    height: 3.125rem;
+    height: 50px;
     font-size: 0.8125rem;
     background-color: #f4f7f6;
     border: none;
@@ -616,7 +620,7 @@ a {
 
 .mailing-button {
     margin-top: 20px;
-    height: 3.125rem;
+    height: 50px;
     font-size: 0.8125rem;
     width: 100%;
     background-color: #b59f5b;
@@ -704,8 +708,6 @@ a {
     justify-content: space-between;
     width: 100%;
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .product-list-item {
@@ -714,11 +716,14 @@ a {
     display: flex;
     flex-direction: column;
     margin: 0;
+    /* margin-left: auto;
+margin-right: auto; */
 }
 
 .product-info {
     box-sizing: border-box;
     width: 100%;
+    height: 100%;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 55px;
@@ -729,7 +734,6 @@ a {
     flex-direction: column;
     align-self: center;
     position: relative;
-    height: 265px;
 }
 
 .product-img {
@@ -781,10 +785,10 @@ a {
 }
 
 .product-button {
-    width: 8.75rem;
+    width: 140px;
     box-sizing: border-box;
     margin-top: 25px;
-    height: 3.125rem;
+    height: 50px;
     font-size: 0.8125rem;
     text-transform: uppercase;
     color: #ffffff;
@@ -834,8 +838,8 @@ a {
 
 .icon {
     display: block;
-    width: 1.875rem;
-    height: 1.875rem;
+    width: 30px;
+    height: 30px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -843,8 +847,8 @@ a {
 }
 
 .hidden {
-    width: 0.0625rem;
-    height: 0.0625rem;
+    width: 1px;
+    height: 1px;
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute;
 }
@@ -866,6 +870,10 @@ a {
         width: 90%;
         padding: 0 5%;
         align-items: center;
+    }
+    .container-title {
+        width: 90%;
+        margin-top: 100px;
     }
     .header-title {
         width: 77%;
@@ -933,12 +941,17 @@ a {
         flex-direction: column;
     }
     .news-img {
+        width: 90%;
         margin: 15px;
         padding: 0;
     }
     .news-text {
         margin: 0;
         width: 80%;
+        margin-left: 30px;
+    }
+    .aside {
+        width: 40%;
     }
     .aside-section {
         /*         width: 40%;
@@ -947,6 +960,9 @@ a {
         display: flex;
         flex-wrap: wrap; */
         margin: 0;
+    }
+    .search-field, .search-container {
+        width: 100%;
     }
     .product {
         width: 90%;
@@ -962,6 +978,7 @@ a {
     .product-list-item {
         width: 47%;
         padding-top: 25px;
+        margin-right: 0;
     }
     .product-list-item:nth-child(odd) {
         margin-right: 3%;
@@ -1089,6 +1106,7 @@ a {
         width: 100%;
         margin: 0;
         margin-top: 15px;
+        margin-left: 30px
     }
     .news-name {
         margin-top: 15px;
@@ -1103,7 +1121,7 @@ a {
         width: 80%;
         margin-bottom: 40px;
     }
-    .search-container {
+    .search-field, .search-container {
         width: 100%;
     }
     .product {
