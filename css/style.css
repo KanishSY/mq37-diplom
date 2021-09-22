@@ -19,7 +19,7 @@
 }
 
 .container-popup {
-    visibility: hidden;
+    /*     visibility: hidden;  */
     position: fixed;
     width: 100%;
     height: 100%;
@@ -114,7 +114,7 @@
     color: #494949;
     background-color: #f3f7f6;
     margin-bottom: 35px;
-    padding: 10px;
+    margin: 10px;
     outline: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -180,7 +180,7 @@
     margin-right: auto;
     font-family: 'OpenSans-Regular', Arial, sans-serif;
     font-size: 0.75rem;
-    padding: 20px;
+    margin: 20px;
     outline: none;
 }
 
@@ -863,6 +863,9 @@ margin-right: auto; */
 }
 
 @media (min-width: 641px) and (max-width: 1200px) {
+    .container-popup {
+        padding-top: 150px;
+    }
     .header {
         background-image: url(../images/banner-bg-tablet.jpg);
     }
@@ -964,13 +967,11 @@ margin-right: auto; */
     .search-field, .search-container {
         width: 100%;
     }
-
     .product {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
-    
     .product-list {
         display: flex;
         flex-wrap: wrap;
@@ -1014,14 +1015,15 @@ margin-right: auto; */
 }
 
 @media (max-width: 640px) {
-    .popup {
-        width: 100vw;
+    .container-popup {
+        padding-top: 10px;
+        /*       width: 100vw;
         height: 100vh;
-        display: flex;
+         display: flex;
         justify-content: center;
         align-items: center;
         left: 0;
-        top: 0;
+        top: 0;  */
     }
     .header {
         height: 635px;
@@ -1046,19 +1048,22 @@ margin-right: auto; */
         box-sizing: border-box;
         margin-left: auto;
         margin-right: auto;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
         display: flex;
         justify-content: center;
         align-items: flex-end;
         margin-top: 100px;
     }
     .header-menu {
+        width: 70%;
         display: flex;
         align-items: flex-start;
+        margin-left: auto;
+        margin-right: auto;
     }
     .logo-img {
-        width: 400px;
-        padding-left: 90px;
+        width: 300px;
+        /*         margin-left: 90px; */
     }
     .trends {
         display: flex;
